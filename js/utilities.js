@@ -17,7 +17,7 @@ function findInputFill(id, title) {
     if (!isNaN(addMoney) && parseFloat(addMoney) > 0) {
         const MoneyIs = parseFloat(addMoney);
         const newBalance = MoneyIs; 
-        // Create and append the h1 element
+        // Create and append the div element
         const div = document.createElement('div');
         const date = new Date();
         div.classList.add('p-6', 'border-2', 'border-gray-100','rounded-xl',);
@@ -25,7 +25,7 @@ function findInputFill(id, title) {
         <p> Date: ${date}`;
         document.getElementById('history-list').appendChild(div);
         return MoneyIs;
-    } else {
+    }else{
         alert("This is Invalid Input");
         document.getElementById('dialog_modal').close();
         return null;
@@ -33,19 +33,16 @@ function findInputFill(id, title) {
 }
 
 // subtract the balance
-function subtractBalance(Balance ,addMoney){
-    if(Balance < addMoney){
+function calculateBalance(id, myCurrentBalanceIs,currentDonateBalanceIs ,addMoney){
+    if(myCurrentBalanceIs < addMoney){
         alert("You don't have enough money");
+        document.getElementById('dialog_modal').close();
     }else{
-        const newBalance = Balance - addMoney;
+        const newBalance = myCurrentBalanceIs - addMoney;
         document.getElementById('myBalance').innerHTML = newBalance;
+        const newBalanceIs = currentDonateBalanceIs + addMoney;
+        document.getElementById(id).innerText = newBalanceIs;
     }
-}
-
-// addition the card balance
-function additionCardBalance(id, Balance ,addMoney){
-    const newBalance = Balance + addMoney;
-    document.getElementById(id).innerText = newBalance;
 }
 
 // show the section or page

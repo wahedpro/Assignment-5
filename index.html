@@ -8,6 +8,13 @@
     <!-- import DaisyUI and Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- import the font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+        body{
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +30,7 @@
                     </div>
                     <div class="flex gap-2 items-center">
                         <img class="lg:w-2/12 w-5" src="assets/logo.png" alt="">
-                        <h1 class="font-bold lg:text-2xl text-sm">Donate Bangladesh</h1>
+                        <h1 class="font-bold lg:text-xl text-sm">Donate Bangladesh</h1>
                     </div>
                     <div class="flex gap-2 items-center">
                         <img src="assets/coin.png" alt="">
@@ -33,9 +40,11 @@
             </div>
         </div>
         <!-- This is header button section -->
-        <div class="w-4/5 mx-auto py-6 flex gap-4 justify-center bg-white">
-            <button id="donation-btn" class="bg-[#B4F461] py-3 px-6 rounded-xl font-bold">Donation</button>
-            <button id="history-btn" class=" border-2 py-3 px-6 rounded-xl font-bold">History</button>
+        <div >
+            <div style="background-color: rgba(255, 255, 255, 0.8);" class="py-6 flex gap-4 justify-center bg-white ">
+                <button id="donation-btn" class="bg-[#B4F461] border-2 py-3 px-6 rounded-xl font-bold">Donation</button>
+                <button id="history-btn" class=" border-2 py-3 px-6 rounded-xl font-bold">History</button>
+            </div>
         </div>
     </header>
     <!-- This is main section -->
@@ -135,7 +144,7 @@
         </div>
     </dialog>
     <!-- import js file -->
-    <script src="js/features.js"></script>
+    <!-- <script src="js/features.js"></script> -->
     <script src="js/utilities.js"></script>
     <script src="js/script.js"></script>
 </body>
