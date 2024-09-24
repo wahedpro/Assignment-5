@@ -39,32 +39,52 @@
     </header>
     <!-- This is main section -->
     <main class="w-4/5 mx-auto py-6 space-y-2">
-        <div class="collapse collapse-arrow bg-base-200">
+        <div class="collapse collapse-arrow bg-base-200 p-8">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">What is the Document Objext Model (DOM)?</div>
             <div class="collapse-content">
-                <p>hello</p>
+                <p>The DOM is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, where each node is an element (e.g., HTML tags, text, attributes). Developers use the DOM to interact with, modify, and update the content, structure, and styles of a webpage dynamically.</p>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-base-200">
+        <div class="collapse collapse-arrow bg-base-200 p-8">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
             <div class="collapse-content">
-                <p>hello</p>
+                <h1 class="text-lg font-semibold">You can select an element from the DOM using various JavaScript methods, such as:</h1>
+                <ul class="list-disc px-10 py-2">
+                    <li>document.getElementById('id') – Selects an element by its ID.</li>
+                    <li> document.querySelector('.class') – Selects the first element that matches a CSS selector.</li>
+                    <li>document.querySelectorAll('selector') – Selects all elements matching a CSS selector.</li>
+                    <li>document.getElementsByClassName('className') – Selects elements by class name.</li>
+                    <li>document.getElementsByTagName('tag') – Selects elements by tag name.</p></li>
+                </ul>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-base-200">
+        <div class="collapse collapse-arrow bg-base-200 p-8">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">Waht is even delegation in the context of the DOM, and why is it useful?</div>
             <div class="collapse-content">
-                <p>hello</p>
+                <h1>Event delegation is a technique where a single event listener is attached to a parent element instead of adding listeners to each individual child element. This leverages event bubbling (the process where events propagate up through the DOM hierarchy) to handle events for multiple elements. It's useful because:</h1>
+                <ul class="list-disc px-10 py-2 mb-5">
+                    <li>It reduces the number of event listeners, improving performance.</li>
+                    <li>It allows you to manage dynamically added elements without needing to reassign event listeners.</li>
+                </ul>
             </div>
         </div>
-        <div class="collapse collapse-arrow bg-base-200">
+        <div class="collapse collapse-arrow bg-base-200 p-8">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">How do you manipulate an elemet's attributes and styles using the DOM?</div>
             <div class="collapse-content">
-                <p>hello</p>
+                <h2 class="text-xl font-semibold">To manipulate attributes, you can use:</h2>
+                <ul class="list-disc px-10 py-2 mb-5">
+                    <li>element.setAttribute('attribute', 'value') – Sets an attribute value.</li>
+                    <li>element.getAttribute('attribute') – Retrieves an attribute value.</li>
+                    <li>element.removeAttribute('attribute') – Removes an attribute.</li>
+                </ul>
+                <h2 class="text-xl font-semibold">To manipulate styles, you can modify the style property:</h2>
+                <ul class="list-disc px-10 py-2">
+                    <li>element.style.property = 'value' – For example, element.style.color = 'blue';.</li>
+                </ul>
             </div>
         </div>
     </main>

@@ -27,19 +27,24 @@ function findInputFill(id, title) {
         return MoneyIs;
     } else {
         alert("This is Invalid Input");
+        document.getElementById('dialog_modal').close();
         return null;
     }
 }
 
 // subtract the balance
-function subtractBalance(a, b){
-    const newBalance = a - b;
-    document.getElementById('myBalance').innerHTML = newBalance;
+function subtractBalance(Balance ,addMoney){
+    if(Balance < addMoney){
+        alert("You don't have enough money");
+    }else{
+        const newBalance = Balance - addMoney;
+        document.getElementById('myBalance').innerHTML = newBalance;
+    }
 }
 
 // addition the card balance
-function additionCardBalance(id, a, b){
-    const newBalance = a + b;
+function additionCardBalance(id, Balance ,addMoney){
+    const newBalance = Balance + addMoney;
     document.getElementById(id).innerText = newBalance;
 }
 

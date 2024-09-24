@@ -3,9 +3,6 @@ document.getElementById('donate-money-noakhali').addEventListener('click', funct
     event.preventDefault();
     const myBalanceIs = findBalance('myBalance');
     const title = findTheTitle('noakhali-title');
-
-    // const dialog = document.getElementById('dialog_modal');
-
     const addMoneyIs = findInputFill('add-money-noakhali', title);
     subtractBalance(myBalanceIs,addMoneyIs);
     const BalanceIs = findBalance('noakhali-Balance');
